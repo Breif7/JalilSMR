@@ -4,17 +4,17 @@ body {
 
 }
 
- #global{
- 	width: 65%;
+#global {
+	width: 65%;
 	margin: 0px auto;
 	margin-top: 30px;
 	padding: 20px;
 	background: white;
 	box-shadow: 0px 0px 0px gray;
 
- }
+}
 
-#logo{
+#logo {
 	font-family: "Verdana", "Arial";
 	font-size: 30px;
 	letter-spacing: 4px;
@@ -23,7 +23,7 @@ body {
 
 }
 
-#menu{
+#menu {
 	font-family: Helvatica, Arial;
 	background: #333;
 	width: 100%;
@@ -31,25 +31,117 @@ body {
 	margin-bottom: 20px;
 }
 
-#menu ul{
+#menu ul {
 	line-height: 46px;
 	list-style: none;
 }
 
-#menu ul li{
+#menu ul li {
 	height: 46;
 	display: inline-block;
 	transition: all 300ms;
 }
-#menu ul li:hover{
-	background:#235ED3
+
+#menu ul li:hover {
+	background: #235ED3
 }
 
-#menu a{
+#menu a {
 	display: block;
 	color: white;
 	text-decoration: none;
 	padding-left: 30px;
 	padding-right: 30px;
 
+}
+
+/* Estilos generales */
+body,
+h1,
+nav,
+p {
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+/* Sección global para centrar el contenido */
+#global {
+	width: 80%;
+	margin: 0 auto;
+	/* Centra la sección */
+	padding: 20px;
+	background: white;
+}
+
+/* Estilos de la cabecera */
+header {
+	background-color: #235f83;
+	/* Un color distintivo para la cabecera */
+	color: white;
+	padding: 10px 0;
+	text-align: center;
+}
+
+#logo {
+	font-size: 2em;
+	/* Tamaño del logo */
+	margin-bottom: 0.5em;
+	/* Espacio debajo del logo */
+}
+
+/* Estilos para el título principal */
+h1 {
+	color: #de541e;
+	/* Color que destaca */
+	font-size: 1.8em;
+	text-align: center;
+	margin: 20px 0;
+}
+
+/* Estilos para la navegación */
+nav {
+	background-color: #f4f4f4;
+	/* Fondo claro para la barra de navegación */
+	padding: 10px;
+}
+
+nav ul {
+	list-style-type: none;
+	/* Remueve los bullets de la lista */
+}
+
+nav ul li {
+	display: inline;
+	/* Muestra los elementos de la lista en línea */
+	margin-right: 20px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	/* Remueve el subrayado de los enlaces */
+	color: #235f83;
+	/* Color para los enlaces */
+	font-weight: bold;
+}
+
+/* Estilos para los párrafos */
+p {
+	line-height: 1.6;
+	/* Espaciado entre líneas para mejor lectura */
+	margin-bottom: 10px;
+	/* Espacio debajo de cada párrafo */
+}
+
+/* Estilos responsivos para pantallas más pequeñas */
+@media (max-width: 768px) {
+	#global {
+		width: 95%;
+	}
+
+	nav ul li {
+		display: block;
+		/* Los elementos de la lista se muestran uno debajo del otro */
+		margin-bottom: 5px;
+	}
 }
